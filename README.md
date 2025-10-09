@@ -1,8 +1,8 @@
 ## Week 1-1 강의 개요 (강의계획서)
-강의내용  
-1. 오픈소스소프트웨어  
-2. git  
-3. Haskell
+> 강의내용  
+> 1. 오픈소스소프트웨어  
+> 2. git  
+> 3. Haskell
 
 ## Week1-2 오픈소스소프트웨어 개요
 
@@ -24,6 +24,7 @@
 1. VCS  
    - 정의 : 파일 변경 이력을 추적하고, 이전 버전으로 복구할 수 있게 하는 시스템
    - 역할 : 코드 백업, 이력 관리, 협업 지원
+   - 종류 : 중앙 집중식, 분산형(Git 등)
 
 2. 기본 동작
    | 개념 | 설명 | Git 명령어 |  
@@ -32,8 +33,13 @@
    | **Check-out** | 저장소의 파일을 가져와 수정 | `git pull` |  
    | **Diff** | 변경 내용 비교 | `git diff` |  
    | **Branch** | 독립적인 작업 공간 생성 | `git branch` |  
-   | **Merge** | 분기된 내용을 병합 | `git merge` |
+   | **Merge** | 분기된 내용을 병합 | `git merge` |  
+   | **Tag** | 중요 버전에 이름표 부여 | `git tag` |
 
+3. 분산혀 VCS(DVCS)의 추가 기능
+- push : 로컬 변경사항을 원격 저장소로 전송
+- pull : 원격 저장소의 변경사항을 로컬로 가져옴
+  
 > **참고자료**  
 > [vcs](https://betterexplained.com/articles/a-visual-guide-to-version-control/)  
 
@@ -49,11 +55,11 @@
      - **Remote Repository:** 원격 저장소(GitHub 등)
 
 2. Git 기본 Workflow
-git clone <repo>     # 원격 저장소 복제  
-git add <file>       # 수정 파일 스테이징  
-git commit -m "msg"  # 로컬 저장소에 커밋  
-git push             # 원격 저장소로 업로드  
-git pull             # 원격 변경사항 병합
+git clone <repo>     _# 원격 저장소 복제_  
+git add <file>       _# 수정 파일 스테이징_  
+git commit -m "msg"  _# 로컬 저장소에 커밋_  
+git push             _# 원격 저장소로 업로드_  
+git pull             _# 원격 변경사항 병합_
 
 3. GitHub와 협업
    - github : git 기반 코드 공유 플랫폼, oss 협업의 핵심 도구
@@ -67,7 +73,7 @@ git pull             # 원격 변경사항 병합
 
 ## Week2-3 Github, fork, pull request
 
- 
+
 
 ## Week2-4 Git: Advanced topics
 

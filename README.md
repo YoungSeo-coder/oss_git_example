@@ -1,7 +1,7 @@
 ## Week 1-1 강의 개요 (강의계획서)
-- 강의내용
-1. 오픈소스소프트웨어
-2. git
+강의내용  
+1. 오픈소스소프트웨어  
+2. git  
 3. Haskell
 
 ## Week1-2 오픈소스소프트웨어 개요
@@ -21,11 +21,49 @@
 
 ## Week2-1 버전 관리 개요
 
+1. VCS  
+   - 정의 : 파일 변경 이력을 추적하고, 이전 버전으로 복구할 수 있게 하는 시스템
+   - 역할 : 코드 백업, 이력 관리, 협업 지원
 
+2. 기본 동작
+   | 개념 | 설명 | Git 명령어 |  
+   |------|------|-------------|  
+   | **Check-in** | 수정 내용을 저장소에 기록 | `git commit` |  
+   | **Check-out** | 저장소의 파일을 가져와 수정 | `git pull` |  
+   | **Diff** | 변경 내용 비교 | `git diff` |  
+   | **Branch** | 독립적인 작업 공간 생성 | `git branch` |  
+   | **Merge** | 분기된 내용을 병합 | `git merge` |
+
+> **참고자료**  
+> [vcs](https://betterexplained.com/articles/a-visual-guide-to-version-control/)  
 
 ## Week2-2 Git
 
- 
+1. Git 개요
+   - **창시자:** Linus Torvalds (Linux 커널 개발을 위해 제작)  
+   - **특징:** 분산형 버전관리 시스템 (DVCS)  
+   - **구성요소**
+     - **Workspace (Working Directory):** 현재 작업 중인 파일  
+     - **Index (Stage):** 다음 커밋에 포함될 파일  
+     - **Local Repository:** 로컬 저장된 변경 이력  
+     - **Remote Repository:** 원격 저장소(GitHub 등)
+
+2. Git 기본 Workflow
+git clone <repo>     # 원격 저장소 복제  
+git add <file>       # 수정 파일 스테이징  
+git commit -m "msg"  # 로컬 저장소에 커밋  
+git push             # 원격 저장소로 업로드  
+git pull             # 원격 변경사항 병합
+
+3. GitHub와 협업
+   - github : git 기반 코드 공유 플랫폼, oss 협업의 핵심 도구
+   - 주요 개념
+    - fork : 다른 사람의 repo를 내 repo로 복사
+    - pull request : 수정 사항을 원래 프로젝트에 반영 요청
+    - merge : 검토 후 병합하여 반영
+      
+> **참고자료** 
+> [git](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## Week2-3 Github, fork, pull request
 

@@ -54,7 +54,7 @@
      - **Remote Repository**: 원격 저장소(GitHub 등), 협업
 
 2. Git 기본 Workflow
-- 원격 저장소 복제 -> 파일 수정 -> 스테이징 -> 커밋 -> 푸시
+- 원격 저장소 복제 -> 파일 수정 -> 스테이징 -> 커밋 -> 푸시  
 git clone <repo>     _# 원격 저장소 복제_  
 git add <file>       _# 새로운 파일(또는 수정 파일) 스테이징_  
 git commit -m "msg"  _# 로컬 저장소에 커밋_
@@ -80,11 +80,16 @@ git diff HEAD _# 작업공간과 마지막 커밋 비교_
 
 ## Week2-3 Github, fork, pull request
 
-
+1. fork
+   - 정의 : 다른사람의 GitHub repo에서 자신의 repo로 복사하는 과정
+   - 특징 : 복사된 repo는 원본과 연결되어 있지만 독립적으로 관리 가능?
+2. Pull Request
+   - 정의 : 자신의 fork된 repo에서 변경된 내용을 원본 repo에 반영해달라고 요청하는 것
+   - 특징 : 코드 검토 후 merge됨
 
 ## Week2-4 Git: Advanced topics
 
- 
+
 
 ## Week3  Markdown
 

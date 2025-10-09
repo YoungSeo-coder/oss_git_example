@@ -36,7 +36,7 @@
    | **Merge** | 분기된 내용을 병합 | `git merge` |  
    | **Tag** | 중요 버전에 이름표 부여 | `git tag` |
 
-3. 분산혀 VCS(DVCS)의 추가 기능
+3. 분산형 VCS(DVCS)의 추가 기능
 - push : 로컬 변경사항을 원격 저장소로 전송
 - pull : 원격 저장소의 변경사항을 로컬로 가져옴
   
@@ -46,26 +46,33 @@
 ## Week2-2 Git
 
 1. Git 개요
-   - **창시자:** Linus Torvalds (Linux 커널 개발을 위해 제작)  
-   - **특징:** 분산형 버전관리 시스템 (DVCS)  
-   - **구성요소**
-     - **Workspace (Working Directory):** 현재 작업 중인 파일  
-     - **Index (Stage):** 다음 커밋에 포함될 파일  
-     - **Local Repository:** 로컬 저장된 변경 이력  
-     - **Remote Repository:** 원격 저장소(GitHub 등)
+   - **특징**: 분산형 버전관리 시스템 (DVCS), 각 개발자가 로컬에 완전한 저장소 복사본을 가짐.
+   - **4가지 관리 영역**
+     - **Workspace (Working Directory)**: 현재 작업 중인 파일이 있는 directory  
+     - **Index (Stage)**: 다음 커밋에 포함될 파일(스테이징 영역)  
+     - **Local Repository**: 로컬에 있는 저장소, 버전 관리가 이루어짐  
+     - **Remote Repository**: 원격 저장소(GitHub 등), 협업
 
 2. Git 기본 Workflow
+- 원격 저장소 복제 -> 파일 수정 -> 스테이징 -> 커밋 -> 푸시
 git clone <repo>     _# 원격 저장소 복제_  
-git add <file>       _# 수정 파일 스테이징_  
-git commit -m "msg"  _# 로컬 저장소에 커밋_  
+git add <file>       _# 새로운 파일(또는 수정 파일) 스테이징_  
+git commit -m "msg"  _# 로컬 저장소에 커밋_
+git commit -a -m "수정사항" _#  수정 사항을 한번에 add+commit_
 git push             _# 원격 저장소로 업로드_  
 git pull             _# 원격 변경사항 병합_
 
-3. GitHub와 협업
-   - github : git 기반 코드 공유 플랫폼, oss 협업의 핵심 도구
-   - 주요 개념
+3. 추가 명령어  
+git fetch _# 원격 저장소 변경사항만 가져오기_  
+git merge <branch> _# 브랜치 병합_  
+git diff _# 작업공간과 index 비교_  
+git diff HEAD _# 작업공간과 마지막 커밋 비교_
+
+4. GitHub와 협업
+   - GitHub : Git 기반 코드 공유 플랫폼, OSS 협업의 핵심 도구
+   - 주요 기능
     - fork : 다른 사람의 repo를 내 repo로 복사
-    - pull request : 수정 사항을 원래 프로젝트에 반영 요청
+    - pull request : 수정 사항을 원본 프로젝트에 반영 요청
     - merge : 검토 후 병합하여 반영
       
 > **참고자료** 
